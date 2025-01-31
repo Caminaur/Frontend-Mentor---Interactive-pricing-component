@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body data-active="false">
+    <div class="layout">
+      <div class="top"></div>
+      <div class="bottom"></div>
+    </div>
+    <div class="container">
+      <div class="top-section">
+        <img src="images/pattern-circles.svg" alt="" class="slider-img" />
+        <div class="title">Simple, traffic-based pricing</div>
+        <div class="description">
+          Sign-up for our 30-day trial. No credit card required.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="row space-between">
+          <span class="views">100k Pageviews</span>
+          <span class="month"><strong class="price">$16.00</strong>/month</span>
+        </div>
+        <div class="slider__div">
+          <div class="empty-slider" data-mouse-down-at="0">
+            <div class="img-slider-div">
+              <img src="images/icon-slider.svg" alt="" class="slider-icon" />
+            </div>
+          </div>
+        </div>
+        <div class="row float-right">
+          <span class="billing">Monthly Billing</span>
+          <label class="switch">
+            <input type="checkbox" id="payment" />
+            <span class="slider round"></span>
+          </label>
+          <span class="billing">Yearly Billing</span>
+          <span class="discount">25% discount</span>
+        </div>
+        <div class="line"></div>
+        <div class="row space-between bottom-row">
+          <div class="column">
+            <div class="row">
+              <img src="images/icon-check.svg" alt="" class="check" /><span
+                class="benefits"
+                >Unlimited websites</span
+              >
+            </div>
+            <div class="row">
+              <img src="images/icon-check.svg" alt="" class="check" /><span
+                class="benefits"
+                >100% data ownership</span
+              >
+            </div>
+            <div class="row">
+              <img src="images/icon-check.svg" alt="" class="check" /><span
+                class="benefits"
+                >Email reports</span
+              >
+            </div>
+          </div>
+          <button class="btn">Start my trial</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Julian Caminaur</a>.
+  </div> -->
+  </body>
+</html>
