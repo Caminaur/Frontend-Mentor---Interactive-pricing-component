@@ -3,27 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Interactive pricing component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
@@ -47,10 +33,16 @@
           <span class="month"><strong class="price">$16.00</strong>/month</span>
         </div>
         <div class="slider__div">
-          <div class="empty-slider" data-mouse-down-at="0">
-            <div class="img-slider-div">
-              <img src="images/icon-slider.svg" alt="" class="slider-icon" />
-            </div>
+          <input
+            class="input-range"
+            type="range"
+            name=""
+            id=""
+            min="10"
+            max="1000000"
+          />
+          <div class="img-slider-div">
+            <img src="images/icon-slider.svg" alt="" class="slider-icon" />
           </div>
         </div>
         <div class="row float-right">
