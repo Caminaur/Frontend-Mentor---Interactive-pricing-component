@@ -136,6 +136,7 @@ strong.price {
   color: var(--neutral-grayish-blue-text);
   font-size: var(--font-size);
   justify-content: end;
+  margin: 1rem 0;
 }
 
 .discount {
@@ -310,6 +311,24 @@ input[type="range"]::-moz-range-thumb {
 
 /* slider  */
 
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  color: lab(6.32 0 0);
+  text-align: center;
+  z-index: 3;
+}
+.attribution a {
+  color: hsl(216.08 66.23% 54.71%);
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: hsl(215.8 68.79% 66.08%);
+}
+
 @media (max-width: 600px) {
   .card {
     width: unset;
@@ -334,7 +353,7 @@ input[type="range"]::-moz-range-thumb {
   .card {
     height: 100%;
     padding: 1.5rem;
-    margin: 0 1rem 1rem 1rem;
+    margin: 0 1rem 5rem 1rem;
   }
   .top-section {
     width: 320px;
@@ -344,6 +363,7 @@ input[type="range"]::-moz-range-thumb {
   }
   .row.float-right {
     font-size: 13px;
+    margin: 0;
   }
   .bottom-row {
     flex-direction: column;
